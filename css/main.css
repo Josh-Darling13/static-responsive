@@ -1,10 +1,7 @@
 body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-}
-
-.container{
-	max-width: 1200px;
-	margin: 0 auto;
+	font-size:1em;
+	padding: 1em; 
 }
 
 h1,
@@ -14,69 +11,59 @@ h3 {
 	text-transform: uppercase;
 	font-weight: 700;
 }
+
 h1 {
-	font-size: 30px;
+	font-size: 1.875em;
 }
+
 h2 {
-	font-size: 18px;
+	font-size: 1.125em;
 }
+
 h3 {
-	font-size: 12px;
+	font-size: .750em;
 }
 
 p {
-	font-size: 14px;
-	line-height: 21px;
-    padding: 0 30px;
+	font-size: 0.875em;
+	line-height: 1.313em;
+
 }
 
 /*The widths are in a percentage!*/
-header {
-	height: 110px;
-	border-bottom: 3px solid #77a466;
-	margin: 0 auto;
-}
+
+
 
 header h1 {
-	float: left;
 	margin: 0;
 	padding: 38px 0;
 }
+
 header h1 span {
 	color: #77a466;
 }
 
-header nav {
-	float: right;
-	padding: 46px 0;
-}
-header nav ul {
-	margin: 0;
-	padding: 0;
-}
-header nav ul li {
-	text-transform: uppercase;
-	font-weight: 700;
-	font-size: 14px;
-	padding: 0 10px;
-	display: inline;
-}
-header nav ul li a{
-	text-decoration: none;
+ul {
 	color:#77a466;
+	list-style: none;
+	text-decoration: none;
 }
 
-/*The widths are in a percentage!*/
-.top-section,
-.bottom-section {
-	margin: 0 auto;
-	clear: both;
+a {
+	color:#77a466;
+	text-decoration: none;
+}
+
+header nav {
+	font-weight: 700;
+	font-size: 0.875em;
+	list-style: none;
 }
 
 .main-image {
 	height: auto;
-	float: left;
 }
+
 .main-image img {
 	width: 100%;
 	border-bottom: 3px solid #77a466;
@@ -84,73 +71,299 @@ header nav ul li a{
 
 .main-title {
 	height: auto;
-	float: left;
 }
+
 .main-title h2 {
-	text-align: left;
-	padding: 5px 0;
 	color: #77a466;
 }
+
 .main-title p {
-	padding: 0;
-	font-size: 16px;
-	line-height: 25px;
+	font-size: 1em;
+	line-height: 2em;
 }
 
-.section-one,
-.section-two,
-.section-three {
-	width: 33%;
+.reviews {
+	color: #333;
+	font-size: 1em;
+	line-height: 21px;
+}
+
+.address {
+	font-size: 1em;
+	line-height: 24px;
+}
+
+footer {
+	height: 50px;
+	border-top: 3px solid #eee;
+	margin: 0 auto;
+	text-align: center;
+}
+
+footer span {
+	font-family: 'Galada', cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: 0.875em;
+}
+
+
+/************
+Breakpoints.
+************/
+/*******
+Celphone
+*******/
+@media screen and (max-width: 480px) {
+
+
+	.container{
+		max-width: 100%;
+		display:flex;
+		flex-flow: column wrap;
+	}
+
+	header {
+		border-bottom: 3px solid #77a466;
+		margin: 0 auto;
+	}
+
+	#nav-deets{
+		line-height: 3em;
+		text-align: center;
+	}
+
+	/*The widths are in a percentage!*/
+	.top-section{
+	
+	width: 100%;
+	display:flex;
+	flex-flow: column wrap;
+		/*
+	align-content: center;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	*/
+}
+	.bottom-section {
+		width: 100%;
+		display: flex;
+		align-content: center;
+		align-items: center;
+		justify-content: left;
+		flex-wrap: wrap;
+	}
+
+	.menu {
+		list-style: none;
+		padding: 0;
+	}
+	
+	.menu li {
+		padding: 10px 0;
+		color:#77a466;
+	}
+
+}
+
+/*
+Tablet portrait
+*/
+
+@media (min-width: 481px){
+
+.container{
+	max-width: 100%;
+	display:flex;
+	align-items: center;
+	flex-flow: column wrap;
+}
+
+header {
+	border-bottom: 3px solid #77a466;
+}
+	
+header h1 {
+	margin: 0;
+	padding: 38px 0;
+}
+
+ul {
+	color:#77a466;
+	list-style: none;
+	line-height: 3em;
+	text-decoration: none;
+
+}
+
+.top-section,
+.bottom-section {
+	display:flex;
+	align-content: center;
+
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.main-image {
 	height: auto;
-	float: left;
-	border-top: 1px solid #eee;
-}
-
-.section-one h3 {
-	padding: 10px 0;
-}
-
-.section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
-}
-
-.section-two h3,
-.section-three h3 {
-	padding: 10px 30px;
 }
 
 .menu {
 	list-style: none;
 	padding: 0;
 }
-.menu li {
-	padding: 10px 0;
+
+@media (min-width: 768px) {
+
+.container{
+	max-width: 100%;
+	display:flex;
+	justify-content: space-around;
+	align-content: center;
+	margin: 0 auto;
+}
+
+header {
+	border-bottom: 3px solid #77a466;
+	margin: 0 auto;
+}
+
+header h1 {
+	margin: 0;
+	padding: 38px 0;
+}
+
+header h1 span {
+	color: #77a466;
+}
+
+ul {
+	color:#77a466;
+	list-style: none;
+	line-height: 3em;
+	text-decoration: none;
+}
+
+/*
+#ul-align{
+	display: flex;
+	align-items: center;
+
+}
+*/
+
+/*The widths are in a percentage!*/
+.top-section{
+	display:flex;
+	align-content: center;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.bottom-section {
+	display:flex;
+	/*align-items: flex-start; */
+	justify-content: space-around;
+	flex-wrap: wrap;
+
+}
+
+.section-one{
+	width: 33%; 
+	text-align: left;*/
+}
+
+.menu{
+	display: flex;
+	justify-content:flex-start;
+	flex-flow: column wrap;
 	color:#77a466;
 }
 
-.reviews {
-	color: #333;
-	font-size: 16px;
-	line-height: 21px;
+#today-menu{
+	text-align: left;
 }
 
-.address {
-	font-size: 16px;
-	line-height: 24px;
+.section-two{
+	width: 33%; 
 }
 
-/*The widths are in a percentage!*/
-footer {
-	height: 50px;
-	border-top: 3px solid #eee;
-	margin: 0 auto;
-	clear: both;
-	text-align: center;
+.section-three {
+	width: 33%; 
 }
-footer span {
-	font-family: 'Galada', cursive;
-	text-transform: lowercase;
-	color: #77a466;
-	font-size: 14px;
+
 }
+
+@media (min-width: 769px) {
+
+	.container{
+		max-width: 100%;
+		display:flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		margin: 0 auto;
+	}
+
+	header {
+		border-bottom: 0px;
+		margin: 0 auto;
+	}
+
+	
+		.nav-deets{
+			display:flex;
+			flex-flow: row wrap;
+			justify-content: flex-end;
+			justify-content: space-around;
+			font-size: 1em;
+		}
+
+
+		.section-one{
+			width: 33%; 
+			text-align: left;
+
+			border: 1px solid #77a466;
+		}
+		
+		.menu{
+			display: flex;
+			justify-content:flex-start;
+			flex-flow: column wrap;
+			color:#77a466;
+		}
+		
+		#today-menu{
+			text-align: left;
+				padding: 5px;
+		}
+		
+		.section-two{
+			width: 33%; 
+
+			border: 1px solid #77a466;
+		}
+		
+		.section-three {
+			width: 33%; 
+
+			border: 1px solid #77a466;
+		}
+		
+
+
+}
+
+
+/**
+
+320px — 480px: Mobile devices.
+481px — 768px: iPads, Tablets.
+769px — 1024px: Small screens, laptops.
+1025px — 1200px: Desktops, large screens.
+
+
+*/

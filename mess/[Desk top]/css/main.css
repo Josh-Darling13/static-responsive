@@ -1,0 +1,90 @@
+body {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-size:1em;
+	padding: 1em; 
+}
+
+div{
+	border: 1px dotted black;
+	border-radius: 25px;
+}
+
+.container{
+	max-width: 100%;
+	display:flex;
+	justify-content: space-between;
+	align-content: center;
+	margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 1.875em;
+}
+
+h2 {
+	font-size: 1.125em;
+}
+
+h3 {
+	font-size: .750em;
+}
+
+p {
+	font-size: 0.875em;
+	line-height: 1.313em;
+    padding: 0 30px;
+}
+
+/*The widths are in a percentage!*/
+
+
+
+header h1 {
+	margin: 0;
+	padding: 38px 0;
+}
+
+
+header h1 span {
+	color: #77a466;
+}
+
+ul {
+	color:#77a466;
+	list-style: none;
+	line-height: 3em;
+	text-decoration: none;
+
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+/*
+	
+	justify-items: right;
+
+	*/
+}
+
+a {
+	color:#77a466;
+	text-decoration: none;
+}
+
+header nav {
+	font-weight: 700;
+	font-size: 0.875em;
+	list-style: none;
+		display: flex;
+	justify-content: space-between;
+	align-content: center;
+}
+
+*/

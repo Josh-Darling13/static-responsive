@@ -1,0 +1,106 @@
+
+/*The widths are in a percentage!*/
+.top-section{
+	display:flex;
+	align-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+
+
+.bottom-section {
+	display:flex;
+
+/*	flex-basis: 33.33%;
+*/
+
+}/*
+.section-one{
+flex-basis: 33%;
+	text-align: left;
+}
+
+.section-two{
+	flex-basis: 33%;
+}
+
+.section-three {
+	flex-basis: 33%;
+}
+*/
+.main-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.main-image img {
+	flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+	border-bottom: 3px solid #77a466;
+}
+
+.main-title {
+	height: auto;
+
+}
+
+.main-title h2 {
+	color: #77a466;
+}
+
+.main-title p {
+	padding: 0;
+	font-size: 1em;
+	line-height: 2em;
+}
+
+.menu {
+	display: flex;
+	list-style: none;
+	padding: 0;
+}
+
+.menu li {
+
+	padding: 10px 0;
+	color:#77a466;
+}
+
+.reviews {
+	color: #333;
+	font-size: 1em;
+	line-height: 21px;
+}
+
+.address {
+	font-size: 1em;
+	line-height: 24px;
+}
+
+footer {
+	height: 50px;
+	border-top: 3px solid #eee;
+	margin: 0 auto;
+	text-align: center;
+}
+
+footer span {
+	font-family: 'Galada', cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: 0.875em;
+}
+
+/**
+
+320px — 480px: Mobile devices.
+481px — 768px: iPads, Tablets.
+769px — 1024px: Small screens, laptops.
+1025px — 1200px: Desktops, large screens.
+
+
+*/
