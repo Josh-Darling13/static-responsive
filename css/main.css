@@ -1,7 +1,19 @@
 body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 	font-size:1em;
-	display: flex;
+	display:flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;  
+
+}
+
+.container{
+	display:flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;  
+	width: 90%;
 
 }
 
@@ -37,6 +49,7 @@ header h1 span {
 }
 
 
+
 ul {
 	color:#77a466;
 	list-style: none;
@@ -52,6 +65,15 @@ header nav {
 	font-weight: 700;
 	font-size: 0.875em;
 	list-style: none;
+}
+
+.we-are{
+	text-align: center;
+}
+
+.nav-deets{
+	line-height: 3em;
+	text-align: center;
 }
 
 .main-image {
@@ -75,6 +97,28 @@ header nav {
 .main-title p {
 	font-size: 1em;
 	line-height: 2em;
+}
+
+.top-section{
+	display:flex;
+	flex-flow: column wrap;
+}
+.bottom-section {
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: left;
+	flex-wrap: wrap;
+}
+
+.menu {
+	list-style: none;
+	padding: 0;
+}
+
+.menu li {
+	padding: 10px 0;
+	color:#77a466;
 }
 
 .reviews {
@@ -102,69 +146,12 @@ footer span {
 	font-size: 0.875em;
 }
 
-/*******
-Celphone
-*******/
-@media screen and (max-width: 767px) {
-
-	body{
-		display:flex;
-		flex-direction: column;
-		align-content: center;
-		align-items: center;  
-
-	}
-
-	.container{
-		display:flex;
-		flex-direction: column;
-		align-content: center;
-		align-items: center;  
-		width: 90%;
-
-	}
-
-	.we-are{
-		text-align: center;
-	}
-
-	.nav-deets{
-		line-height: 3em;
-		text-align: center;
-	}
-
-
-	.top-section{
-		display:flex;
-		flex-flow: column wrap;
-	}
-	.bottom-section {
-		display: flex;
-		align-content: center;
-		align-items: center;
-		justify-content: left;
-		flex-wrap: wrap;
-	}
-
-	.menu {
-		list-style: none;
-		padding: 0;
-	}
-	
-	.menu li {
-		padding: 10px 0;
-		color:#77a466;
-	}
-
-}
-
-
 
 /*******
 Tablet
 *******/
 
-@media (min-width: 768px){
+@media screen and (min-width: 768px){
  
 	body{
 		display:flex;
@@ -179,7 +166,6 @@ Tablet
 		align-items: center;
 		flex-direction: column;
 	}
-
 
 	header {
 		width: 90%;
@@ -239,10 +225,12 @@ Tablet
 	.section-three {
 		width: 30%; 
 	}
+
 }
+
 /*******
 Computer
-*******/
+*****/
 
 
 @media (min-width: 1200px) {
