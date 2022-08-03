@@ -33,6 +33,12 @@ p {
 /*The widths are in a percentage!*/
 
 
+/****************
+PUT IMAGE INTO HERE!!!!!!!!!!!!!!!!
+CONTROL IMAGES IN THE CC!
+
+******************/
+
 
 header h1 {
 	margin: 0;
@@ -120,7 +126,11 @@ Celphone
 	.container{
 		width: 90%;
 		display:flex;
-		flex-flow: column wrap;
+	flex-flow: column wrap; 
+	align-content: center;
+	align-items: center;  
+	justify-content: space-around;
+	flex-wrap: wrap;
 	}
 
 	header {
@@ -128,26 +138,19 @@ Celphone
 		margin: 0 auto;
 	}
 
-	#nav-deets{
+	.nav-deets{
 		line-height: 3em;
 		text-align: center;
 	}
 
 	/*The widths are in a percentage!*/
 	.top-section{
-	
-	width: 100%;
+	width: 90%;
 	display:flex;
 	flex-flow: column wrap;
-		/*
-	align-content: center;
-	align-items: center;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	*/
-}
+	}
 	.bottom-section {
-		width: 100%;
+		width: 90%;
 		display: flex;
 		align-content: center;
 		align-items: center;
@@ -170,7 +173,7 @@ Celphone
 /*
 Tablet portrait
 */
-
+/*
 @media (min-width: 481px){
 
 .container{
@@ -215,6 +218,8 @@ ul {
 	padding: 0;
 }
 
+}
+
 @media (min-width: 768px) {
 
 .container{
@@ -252,9 +257,11 @@ ul {
 	align-items: center;
 
 }
-*/
+
 
 /*The widths are in a percentage!*/
+
+/*
 .top-section{
 	display:flex;
 	align-content: center;
@@ -265,7 +272,6 @@ ul {
 
 .bottom-section {
 	display:flex;
-	/*align-items: flex-start; */
 	justify-content: space-around;
 	flex-wrap: wrap;
 
@@ -273,7 +279,7 @@ ul {
 
 .section-one{
 	width: 33%; 
-	text-align: left;*/
+	text-align: left;
 }
 
 .menu{
