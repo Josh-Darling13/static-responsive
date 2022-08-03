@@ -189,7 +189,7 @@ Tablet
 
 	.top-section,
 	.bottom-section {
-		width: 90;
+		width: 90%;
 		display:flex;
 		align-content: center;
 		justify-content: space-around;
@@ -225,17 +225,15 @@ Tablet
 	.section-three {
 		width: 30%; 
 	}
-
 }
 
 /*******
 Computer
-*****/
+****/
 
 
 @media (min-width: 1200px) {
 
-	 
 	body{
 		display:flex;
 		flex-direction: column;
@@ -244,7 +242,6 @@ Computer
 
 	}
 
-	}
 	.container{
 		width: 90%;
 		display:flex;
@@ -318,3 +315,4 @@ Computer
 	.section-three {
 		width: 30%; 
 	}
+}
