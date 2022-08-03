@@ -1,6 +1,7 @@
 body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 	font-size:1em;
+	display: flex;
 
 }
 
@@ -14,6 +15,7 @@ h3 {
 
 h1 {
 	font-size: 1.875em;
+	border-bottom: 3px solid #77a466;
 }
 
 h2 {
@@ -30,24 +32,10 @@ p {
 
 }
 
-/*The widths are in a percentage!*/
-
-
-/****************
-PUT IMAGE INTO HERE!!!!!!!!!!!!!!!!
-CONTROL IMAGES IN THE CC!
-
-******************/
-
-
-header h1 {
-	margin: 0;
-	padding: 38px 0;
-}
-
 header h1 span {
 	color: #77a466;
 }
+
 
 ul {
 	color:#77a466;
@@ -67,6 +55,7 @@ header nav {
 }
 
 .main-image {
+	width: 100%;
 	height: auto;
 }
 
@@ -113,29 +102,30 @@ footer span {
 	font-size: 0.875em;
 }
 
-
-/************
-Breakpoints.
-************/
 /*******
 Celphone
 *******/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
 
-
-	.container{
-		width: 90%;
+	body{
 		display:flex;
-	flex-flow: column wrap; 
-	align-content: center;
-	align-items: center;  
-	justify-content: space-around;
-	flex-wrap: wrap;
+		flex-direction: column;
+		align-content: center;
+		align-items: center;  
+
 	}
 
-	header {
-		border-bottom: 3px solid #77a466;
-		margin: 0 auto;
+	.container{
+		display:flex;
+		flex-direction: column;
+		align-content: center;
+		align-items: center;  
+		width: 90%;
+
+	}
+
+	.we-are{
+		text-align: center;
 	}
 
 	.nav-deets{
@@ -143,14 +133,12 @@ Celphone
 		text-align: center;
 	}
 
-	/*The widths are in a percentage!*/
+
 	.top-section{
-	width: 90%;
-	display:flex;
-	flex-flow: column wrap;
+		display:flex;
+		flex-flow: column wrap;
 	}
 	.bottom-section {
-		width: 90%;
 		display: flex;
 		align-content: center;
 		align-items: center;
@@ -170,206 +158,175 @@ Celphone
 
 }
 
-/*
-Tablet portrait
-*/
-/*
-@media (min-width: 481px){
-
-.container{
-	width: 90%;
-	display:flex;
-	align-items: center;
-	flex-flow: column wrap;
-}
-
-header {
-	border-bottom: 3px solid #77a466;
-}
-	
-header h1 {
-	margin: 0;
-	padding: 38px 0;
-}
-
-ul {
-	color:#77a466;
-	list-style: none;
-	line-height: 3em;
-	text-decoration: none;
-
-}
-
-.top-section,
-.bottom-section {
-	display:flex;
-	align-content: center;
-
-	justify-content: space-around;
-	flex-wrap: wrap;
-}
-
-.main-image {
-	height: auto;
-}
-
-.menu {
-	list-style: none;
-	padding: 0;
-}
-
-}
-
-@media (min-width: 768px) {
-
-.container{
-	width: 90%;
-	display:flex;
-	justify-content: space-around;
-	align-content: center;
-	margin: 0 auto;
-}
-
-header {
-	border-bottom: 3px solid #77a466;
-	margin: 0 auto;
-}
-
-header h1 {
-	margin: 0;
-	padding: 38px 0;
-}
-
-header h1 span {
-	color: #77a466;
-}
-
-ul {
-	color:#77a466;
-	list-style: none;
-	line-height: 3em;
-	text-decoration: none;
-}
-
-/*
-#ul-align{
-	display: flex;
-	align-items: center;
-
-}
 
 
-/*The widths are in a percentage!*/
+/*******
+Tablet
+*******/
 
-/*
-.top-section{
-	display:flex;
-	align-content: center;
-	align-items: center;
-	justify-content: space-around;
-	flex-wrap: wrap;
-}
-
-.bottom-section {
-	display:flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
-
-}
-
-.section-one{
-	width: 33%; 
-	text-align: left;
-}
-
-.menu{
-	display: flex;
-	justify-content:flex-start;
-	flex-flow: column wrap;
-	color:#77a466;
-}
-
-#today-menu{
-	text-align: left;
-}
-
-.section-two{
-	width: 33%; 
-}
-
-.section-three {
-	width: 33%; 
-}
-
-}
-
-@media (min-width: 769px) {
-
-	.container{
-		max-width: 100%;
+@media (min-width: 768px){
+ 
+	body{
 		display:flex;
-		flex-flow: row wrap;
-		justify-content: space-around;
-		margin: 0 auto;
+		flex-direction: column;
+		align-content: center;
+		align-items: center;  
+
 	}
+	.container{
+		width: 90%;
+		display:flex;
+		align-items: center;
+		flex-direction: column;
+	}
+
 
 	header {
-		border-bottom: 0px;
-		margin: 0 auto;
+		width: 90%;
+		border-bottom: 3px solid #77a466;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+		
+	.we-are{
+		text-align: center;
 	}
 
-	
-		.nav-deets{
-			display:flex;
-			flex-flow: row wrap;
-			justify-content: flex-end;
-			justify-content: space-around;
-			font-size: 1em;
-		}
+	ul {
+		color:#77a466;
+		list-style: none;
+		line-height: 3em;
+		text-decoration: none;
 
+	}
 
-		.section-one{
-			width: 33%; 
-			text-align: left;
+	.top-section,
+	.bottom-section {
+		width: 90;
+		display:flex;
+		align-content: center;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
 
-			border: 1px solid #77a466;
-		}
-		
-		.menu{
-			display: flex;
-			justify-content:flex-start;
-			flex-flow: column wrap;
-			color:#77a466;
-		}
-		
-		#today-menu{
-			text-align: left;
-				padding: 5px;
-		}
-		
-		.section-two{
-			width: 33%; 
+	.main-image {
+		height: auto;
+	}
 
-			border: 1px solid #77a466;
-		}
-		
-		.section-three {
-			width: 33%; 
+	.section-one{
+		width: 30%; 
+		text-align: left;
+	}
 
-			border: 1px solid #77a466;
-		}
-		
+	.menu{
+		display: flex;
+		justify-content:flex-start;
+		flex-flow: column wrap;
+		color:#77a466;
+		list-style: none;
+		padding: 0;
+	}
 
+	#today-menu{
+		text-align: left;
+	}
 
+	.section-two{
+		width: 30%; 
+	}
+
+	.section-three {
+		width: 30%; 
+	}
 }
+/*******
+Computer
+*******/
 
 
-/**
+@media (min-width: 1200px) {
 
-320px — 480px: Mobile devices.
-481px — 768px: iPads, Tablets.
-769px — 1024px: Small screens, laptops.
-1025px — 1200px: Desktops, large screens.
+	 
+	body{
+		display:flex;
+		flex-direction: column;
+		align-content: center;
+		align-items: center;  
+
+	}
+
+	}
+	.container{
+		width: 90%;
+		display:flex;
+		align-items: center;
+		flex-direction: column;
+	}
 
 
-*/
+	header {
+		width: 90%;
+		display:flex;
+		justify-content: space-between;
+		flex-direction: row;
+	}
+
+	.deets{
+		width: 50%;
+	}
+
+	ul {
+		display: flex;
+		color:#77a466;
+		list-style: none;
+		line-height: 3em;
+		text-decoration: none;
+		justify-content: space-evenly;
+
+	}
+
+	.nav-deets{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+
+	.top-section,
+	.bottom-section {
+		width: 90%;
+		display:flex;
+		align-content: center;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+
+	.main-image {
+		height: auto;
+	}
+
+	.section-one{
+		width: 30%; 
+		text-align: left;
+	}
+
+	.menu{
+		display: flex;
+		justify-content:flex-start;
+		flex-flow: column wrap;
+		color:#77a466;
+		list-style: none;
+		padding: 0;
+	}
+
+	#today-menu{
+		text-align: left;
+	}
+
+	.section-two{
+		width: 30%; 
+	}
+
+	.section-three {
+		width: 30%; 
+	}
